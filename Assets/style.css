@@ -4,6 +4,7 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Below we are styling the Header */
 
 header {
     display: flex;
@@ -56,57 +57,59 @@ nav a {
   color: whitesmoke;
 }
 
+/* Here we are making the main content (which contains the article "About Me" and the "Work" sections. */
+/* We want to flex them in a direction of column since the sections go from top to bottom. */
+
 main {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   border: 1px black dashed;
 }
+
+/* Here we are styling the "About Me" section. We want it to flex in the row direction since this content goes
+  from left to right, starting with the header on the left, and then the image and details on the right. */
 
 .article {
+  flex-basis:100%;
   display: flex;
   flex-direction: row;
-  /* align-items: center;
-  flex-wrap: wrap; */ */
   border: 1px black dashed;
 }
 
-.headings {
+.article h2 {
   width:30%;
-  text-align:right;
+  align-items: right;
+  text-align:center;
   margin: 2px 2px 2px 2px;
-  padding: 150px 50px 150px 0;
+  padding: 150px 4px 150px 4px;
   border-right: 4px rgb(28, 58, 124) solid;
   font-size: 30px;
 }
 
-/* .article h2 {
-  width:30%;
-  text-align:right;
-  margin: 2px 2px 2px 2px;
-  padding: 150px 50px 150px 0;
-  border-right: 4px rgb(28, 58, 124) solid;
-} */
+/* Here we are creating a class for the image and about me <p> information and creating their own class so that 
+  when the screen adjusts, these adjust & wrap in relation to each other without affecting the Header "About Me" */
 
-.article img p {
-  display: flex;
-  flex-direction: column;
+.article-container {
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .article img {
+  max-height: 10%;
   padding: 10px 20px 10px 20px;
-  display:flex;
-  flex-shrink: 1;
-}
+  border: 1px black dashed;
+  flex: 0 1 auto;
+  flex-basis: 30%;
+} 
 
 .article p {
-  width: 40%;
   padding: 10px 10px 10px 10px;
-  flex-wrap: wrap;
+  border: 1px black dashed;
+  flex-basis: 70%;
 }
 
+/* Below we are styling the "Work" section */
 
 .work {
   display: flex;
@@ -121,56 +124,9 @@ main {
     margin: 20px;
     width: 200px;
 }
-/* header h1 {
-    align-content: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    min-width: 400px;
-    list-style: none;
-  }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}   */
 
 
-/* 
-header h1 {
-    display: flex;
-    font-size: 100%;
-    align-items: flex-start;
-    width:50%;
-    align-content:center;
-}
-
-header nav {
-    display: flex;
-    font-size: 50%;
-    align-items: flex-end;
-    width:50%;
-}
-
-header nav ul li {
-    align-items:center;
-    justify-content: space-between;
-} */
-
-@media screen and (max-width: 768px) {
-    header, main {
-      flex-direction: column;
+@media screen and (min-width: 768px) {
+    .article-container {
+      display: flex;
     }
-  
-    section {
-      padding-right: 0;
-    }
-  
-    aside {
-      width: 100%;
-      text-align: center;
-    }
-  }
