@@ -7,38 +7,39 @@
 /* Below we are styling the Header */
 
 header {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     background-color: #6385b1;
     color: #ffffff;
-    padding: 0 4% 0 2%;
+    padding: 2% 4% 2% 4%;
     width: 100%;
 }
 
-
 header h1 {
-  justify-content: flex-start;
+  text-align: center;
 }
-  
+nav {
+  align-content: center;
+}
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    min-width: 500px;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    min-width: 400px;
     list-style: none;
-    align-content: center;
   }
   
 nav a {
     color:whitesmoke;
     text-decoration: none;
     font-weight: bold;
-    list-style: none;
     border-bottom: 2px white solid;
     margin-bottom: -10px;
-    padding-bottom: 4px;
+    padding: 0 0 4px 0;
+    text-align:center;
 } 
 
 .header-image {
@@ -72,19 +73,16 @@ main {
 
 .article {
   flex-basis:100%;
-  display: flex;
   flex-direction: row;
   border: 1px black dashed;
 }
 
 .article h2 {
-  width:30%;
-  align-items: right;
-  text-align:center;
+  text-align: right;
   margin: 2px 2px 2px 2px;
-  padding: 150px 4px 150px 4px;
+  padding: 0px 12px 0px 50px;
   border-right: 4px rgb(28, 58, 124) solid;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 /* Here we are creating a class for the image and about me <p> information and creating their own class so that 
@@ -95,13 +93,13 @@ main {
   flex-wrap: wrap;
 }
 
-.article img {
+/* .article img {
   max-height: 10%;
   padding: 10px 20px 10px 20px;
   border: 1px black dashed;
   flex: 0 1 auto;
   flex-basis: 30%;
-} 
+}  */
 
 .article p {
   padding: 10px 10px 10px 10px;
@@ -112,21 +110,68 @@ main {
 /* Below we are styling the "Work" section */
 
 .work {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;  
+  /* display: flex; */
+  flex-direction: row; 
   border: 1px black dashed;
 }
 
-.card {
-  border: 1px white dashed;
-    padding: 10px;
-    margin: 20px;
-    width: 200px;
+.work h3 {
+  text-align: right;
+  margin: 2px 2px 2px 2px;
+  padding: 0px 12px 0px 50px;
+  border-right: 4px rgb(28, 58, 124) solid;
+  font-size: 50px;
 }
 
 
+.projects {
+  /* display:flex; */
+  border: 1px black dashed;
+}
+
+.projects div {
+  border: 1px black dashed;
+}
+
+footer {
+  display: flex;
+  flex-direction: row; 
+  border: 1px black dashed;
+}
+
+footer h2 {
+  width: 30%;
+  text-align: right;
+  margin: 2px 2px 2px 2px;
+  padding: 0px 12px 0px 50px;
+  border-right: 4px rgb(28, 58, 124) solid;
+  font-size: 50px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  min-width: 500px;
+  list-style: none;
+  align-content: center;
+}
+
+/* Want the section headers to go to the top with content underneath when page shrinks in column format. */
+
 @media screen and (min-width: 768px) {
-    .article-container {
+    header  {
       display: flex;
     }
+
+    .work {
+      display: flex;
+    }
+
+    .article {
+      display: flex;
+    }
+
+    .projects {
+      display: flex;
+    }
+  }
