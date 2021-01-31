@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <title>My Portfolio</title>
 </head>
 
@@ -25,38 +26,41 @@
         </nav>
     </header>           
                        
-    <div class="header-image"><h2>Welcome to my Portfolio!</h2></div>
+    <div class="header-image">
+        <h2>Welcome to my Portfolio!</h2>
+    </div>
                 
     <main>
 
         <!-- Enter about me paragraph in the <p> -->
-        <article class="article">
+        <article id="about-me" class="article">
             <h2 class="headings">About Me</h2>
             <div class="article-container"></div>
                 <!-- <img src="./Assets/images/Untitled.jpg" title="Photo of Kendall Trudick" alt="photo of Kendall Trudick" /> -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto praesentium doloribus molestias voluptatum quibusdam nemo ex earum consectetur laudantium excepturi, recusandae quo animi voluptates ullam placeat impedit quisquam fuga?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto praesentium doloribus molestias voluptatum quibusdam nemo ex earum consectetur laudantium excepturi, recusandae quo animi voluptates ullam placeat impedit quisquam fuga?<br/><br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto praesentium doloribus molestias voluptatum quibusdam nemo ex earum consectetur laudantium excepturi, recusandae quo animi voluptates ullam placeat impedit quisquam fuga?<br/><br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto praesentium doloribus molestias voluptatum quibusdam nemo ex earum consectetur laudantium excepturi, recusandae quo animi voluptates ullam placeat impedit quisquam fuga?<br/><br/>
+                </p>
             </div>
         </article>
 
 
         <!-- Include here the different (5 of them) pieces of work -->
-        <section class="work">
-            <h3>Work</h3>
+        <section id="work" class="work">
+            <h2 class="headings">Work</h2>
             <div class="projects">
                 <div class="project1">
-                    <h4>PROJECT 1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate, cumque optio iusto reprehenderit nulla, magni molestiae odit doloremque dolor corporis sunt voluptatum magnam explicabo veritatis velit placeat eos saepe?</p>
+                    <a href="https://github.com/ktrudickm/Homework1">
+                        <!-- <img src="./Assets/images/Screen Shot 2021-01-31 at 1.31.40 PM.png" alt="Horiseon Project" width="600" height="475"> -->
+                    </a>
                 </div>
                 <div class="project2">
-                    <h4>PROJECT 2</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate, cumque optio iusto reprehenderit nulla, magni molestiae odit doloremque dolor corporis sunt voluptatum magnam explicabo veritatis velit placeat eos saepe?</p>
                 </div>
                 <div class="project3">
-                    <h4>PROJECT 3</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate, cumque optio iusto reprehenderit nulla, magni molestiae odit doloremque dolor corporis sunt voluptatum magnam explicabo veritatis velit placeat eos saepe?</p>
                 </div>
                 <div class="project4">
-                    <h4>PROJECT 4</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cupiditate, cumque optio iusto reprehenderit nulla, magni molestiae odit doloremque dolor corporis sunt voluptatum magnam explicabo veritatis velit placeat eos saepe?</p>
                 </div>  
              </div>  
@@ -68,7 +72,7 @@
 
 
     <footer>
-        <h2>Contact Me</h2>
+        <h4 class="headings" id="contact">Contact Me</h2>
         <ul>
             <li>
                 <a href="#">330.998.4295</a>
@@ -83,10 +87,10 @@
                 <a href="https://www.linkedin.com/in/kendall-trudick-21598a106/">LinkedIn</a>
             </li>
         </ul>
-    </footer>
+    </footer><br/>
 
 
 
 </body>
 
-</html>>
+</html>

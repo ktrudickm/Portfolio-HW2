@@ -1,35 +1,41 @@
 
 * {
-  box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+:root {
+  --mid-blue:  #6385b1;
+  --dark-blue: #1e4270;
+}
 /* Below we are styling the Header */
 
 header {
-    /* display: flex;
-    flex-direction: row; */
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6385b1;
+    background-color: var(--mid-blue);
     color: #ffffff;
     padding: 2% 4% 2% 4%;
     width: 100%;
 }
 
 header h1 {
+  width: 320px;
   text-align: center;
-}
-nav {
-  align-content: center;
+  display: inline-block;
+  font-size: 35px;
+  background-color: var(--dark-blue);
+  padding:12px;
+  margin-left: -50px;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    min-width: 400px;
+nav {
+  float: right;
+  text-align: center;
+  margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
     list-style: none;
+    padding: 15px 0 0 0;
   }
   
 nav a {
@@ -37,16 +43,15 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px white solid;
-    margin-bottom: -10px;
-    padding: 0 0 4px 0;
-    text-align:center;
+    padding: 0px 0 4px 0;
+    margin: 0 15px -5px 15px;
 } 
 
 .header-image {
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("./images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   align-content: center;
@@ -56,42 +61,43 @@ nav a {
   float:right;
   margin: 150px 50px 10px 0;
   color: whitesmoke;
+  font-size: 25px;
 }
 
 /* Here we are making the main content (which contains the article "About Me" and the "Work" sections. */
 /* We want to flex them in a direction of column since the sections go from top to bottom. */
 
 main {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* justify-content: center; */
-  border: 1px black dashed;
+  /* border: 1px black dashed; */
 }
 
 /* Here we are styling the "About Me" section. We want it to flex in the row direction since this content goes
   from left to right, starting with the header on the left, and then the image and details on the right. */
 
 .article {
-  flex-basis:100%;
-  flex-direction: row;
-  border: 1px black dashed;
-}
+  display: flex;
+  margin-top: 25px;
+} 
 
-.article h2 {
+.headings {
+  float: left;
   text-align: right;
   margin: 2px 2px 2px 2px;
-  padding: 0px 12px 0px 50px;
-  border-right: 4px rgb(28, 58, 124) solid;
+  padding: 0 2% 0 6%;
   font-size: 50px;
+  align-items: stretch;
+  width: 320px;
 }
 
 /* Here we are creating a class for the image and about me <p> information and creating their own class so that 
   when the screen adjusts, these adjust & wrap in relation to each other without affecting the Header "About Me" */
 
-.article-container {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+/* .article-container {
+  width:70%;
+} */
 
 /* .article img {
   max-height: 10%;
@@ -102,76 +108,62 @@ main {
 }  */
 
 .article p {
-  padding: 10px 10px 10px 10px;
-  border: 1px black dashed;
-  flex-basis: 70%;
+  padding: 0px 5px 0px 5px;
+  border-left: 4px black solid;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin: 5px 5px 5px 0px;
 }
 
 /* Below we are styling the "Work" section */
 
 .work {
-  /* display: flex; */
-  flex-direction: row; 
-  border: 1px black dashed;
-}
-
-.work h3 {
-  text-align: right;
-  margin: 2px 2px 2px 2px;
-  padding: 0px 12px 0px 50px;
-  border-right: 4px rgb(28, 58, 124) solid;
-  font-size: 50px;
+  display: flex;
+  margin-top: 25px;
 }
 
 
 .projects {
-  /* display:flex; */
-  border: 1px black dashed;
+  border-left:  4px black solid;
+  padding: 0px 5px 0px 5px;
+  margin: 5px 5px 5px 0;
 }
 
 .projects div {
-  border: 1px black dashed;
+  /* border: 1px black dashed; */
+}
+
+.projects img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
   display: flex;
-  flex-direction: row; 
-  border: 1px black dashed;
+  flex-direction: row;
+  margin-top: 25px;
+  align-items: stretch;
+  margin-bottom: 20px;
 }
 
-footer h2 {
-  width: 30%;
-  text-align: right;
-  margin: 2px 2px 2px 2px;
-  padding: 0px 12px 0px 50px;
-  border-right: 4px rgb(28, 58, 124) solid;
-  font-size: 50px;
-}
 
 footer ul {
-  display: flex;
-  justify-content: space-around;
-  min-width: 500px;
-  list-style: none;
-  align-content: center;
+  align-items: stretch;
+  float: right;
+  min-width: 600px;
+  text-align: center;
+  list-style: none ;
+  border-left:  4px black solid;
+  padding: 60px 0 60px 0;
 }
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px 0 15px;
+}
+
 
 /* Want the section headers to go to the top with content underneath when page shrinks in column format. */
 
-@media screen and (min-width: 768px) {
-    header  {
-      display: flex;
-    }
 
-    .work {
-      display: flex;
-    }
-
-    .article {
-      display: flex;
-    }
-
-    .projects {
-      display: flex;
-    }
-  }
