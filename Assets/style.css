@@ -1,0 +1,133 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6385b1;
+    color: #ffffff;
+    padding: 0 4% 0 2%;
+    width: 100%;
+}
+
+
+header h1 {
+  justify-content: flex-start;
+}
+  
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    list-style: none;
+    align-content: center;
+  }
+  
+nav a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    border-bottom: 2px white solid;
+    margin-bottom: -10px;
+    padding-bottom: 4px;
+} 
+
+.header-image {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  align-content: center;
+}
+
+.header-image h2 {
+  float:right;
+  margin: 150px 50px 10px 0;
+  color: whitesmoke;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px black dashed;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px black dashed;
+}
+
+.article h2 {
+  
+}
+
+
+
+/* header h1 {
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-width: 400px;
+    list-style: none;
+  }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}   */
+
+
+/* 
+header h1 {
+    display: flex;
+    font-size: 100%;
+    align-items: flex-start;
+    width:50%;
+    align-content:center;
+}
+
+header nav {
+    display: flex;
+    font-size: 50%;
+    align-items: flex-end;
+    width:50%;
+}
+
+header nav ul li {
+    align-items:center;
+    justify-content: space-between;
+} */
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
