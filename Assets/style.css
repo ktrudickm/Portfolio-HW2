@@ -58,26 +58,69 @@ nav a {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   border: 1px black dashed;
 }
 
 .article {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* align-items: center;
+  flex-wrap: wrap; */ */
   border: 1px black dashed;
 }
 
-.article h2 {
-  
+.headings {
+  width:30%;
+  text-align:right;
+  margin: 2px 2px 2px 2px;
+  padding: 150px 50px 150px 0;
+  border-right: 4px rgb(28, 58, 124) solid;
+  font-size: 30px;
+}
+
+/* .article h2 {
+  width:30%;
+  text-align:right;
+  margin: 2px 2px 2px 2px;
+  padding: 150px 50px 150px 0;
+  border-right: 4px rgb(28, 58, 124) solid;
+} */
+
+.article img p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.article img {
+  padding: 10px 20px 10px 20px;
+  display:flex;
+  flex-shrink: 1;
+}
+
+.article p {
+  width: 40%;
+  padding: 10px 10px 10px 10px;
+  flex-wrap: wrap;
 }
 
 
+.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;  
+  border: 1px black dashed;
+}
 
+.card {
+  border: 1px white dashed;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+}
 /* header h1 {
     align-content: center;
 }
