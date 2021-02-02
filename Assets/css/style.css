@@ -19,10 +19,10 @@ header {
 }
 
 header h1 {
-  text-align: left;
+  text-align: center;
   font-size: 35px;
   background-color: var(--dark-blue);
-  padding:12px;
+  padding:10px;
   width: 30%;
 }
 
@@ -43,7 +43,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px white solid;
-    padding: 0px 0 2px 0;
+    padding: 0px 4px 2px 4px;
 } 
 
 .header-image {
@@ -53,7 +53,7 @@ nav a {
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
-  align-content: center;
+  /* align-content: center; */
 }
 
 .header-image h2 {
@@ -85,7 +85,7 @@ nav a {
   margin: 2px 2px 2px 2px;
   padding: 0 10px 0 50px;
   font-size: 50px;
-  align-items: stretch;
+  /* align-items: stretch; */
   width: 30%;
 }
 
@@ -107,7 +107,7 @@ nav a {
 .article p {
   padding: 0px 15px 0px 15px;
   border-left: 4px var(--dark-blue) solid;
-  text-align: left;
+  /* text-align: left; */
   letter-spacing: 1px;
   line-height: 1.8;
   /* margin: 5px 5px 5px 0px; */
@@ -118,7 +118,7 @@ nav a {
 .work {
   display: flex;
   margin-top: 25px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 
@@ -129,7 +129,7 @@ nav a {
   border-left:  4px var(--dark-blue) solid;
   padding: 0px 5px 10px 5px;
   width:70%;
-  justify-content:center;
+  /* justify-content:center; */
 }
 
 .project1 {
@@ -159,9 +159,9 @@ nav a {
 
 footer {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   margin-top: 25px;
-  align-items: stretch;
+  /* align-items: stretch; */
   margin-bottom: 20px;
 }
 
@@ -173,12 +173,12 @@ footer ul {
   list-style: none ;
   border-left:  4px var(--dark-blue) solid;
   padding: 20px 0 20px 0px;
-  align-items:center;
+  /* align-items:center; */
 }
 
 footer ul li {
   width: auto;
-  margin-right: 0.5%;
+  /* margin-right: 0.5%; */
   padding-left: 0;
   margin-left:0;
 }
