@@ -35,26 +35,4 @@ The following animation shows the web application's appearance and functionality
 
 
 
-element.style {
-    flex: auto;
-    /* padding-left: 40px; */
-    /* padding-right: 24px; */
-    text-align: center;
 
-
-element.style {
-    margin-top: 10px;
-}
-
-<h2 class="headings" style="
-    /* display:  flex; */
-    flex-display:  100%;
-    text-align: center;
-">About Me</h2>
-
-<p class="article-container" style="
-    flex-display: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 30px;
-    margin-right: 30px;
