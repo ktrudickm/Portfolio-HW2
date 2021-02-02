@@ -87,7 +87,7 @@ nav a {
   padding: 0 2% 0 8%;
   font-size: 50px;
   align-items: stretch;
-  width: 320px;
+  width: 30%;
 }
 
 /* Here we are creating a class for the image and about me <p> information and creating their own class so that 
@@ -120,6 +120,7 @@ nav a {
 .work {
   display: flex;
   margin-top: 25px;
+  justify-content: space-between;
 }
 
 
@@ -144,6 +145,16 @@ nav a {
 .project1, .project2, .project3{
   padding: 10px 10px 10px 10px;
 }
+ .project2, .project3 {
+   width: 50%;
+ }
+
+ .project2 img, .project3 img {
+  width:100%;
+  height:100%;
+  flex: 0 2 100%;
+ }
+
 
 footer {
   display: flex;
@@ -207,6 +218,11 @@ nav ul {
   flex-wrap: wrap;
 }
 
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .headings {
 width: 100%;
 text-align: center;
@@ -220,4 +236,20 @@ text-align: center;
   margin-right: 20px;
 }
 
+.projects {
+  flex-wrap:wrap;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+.project2 {
+  width: 100%;
+}
+
+.project3 {
+  width: 100%;
+}
+
