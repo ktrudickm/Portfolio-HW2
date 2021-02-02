@@ -76,7 +76,17 @@ nav a {
 } 
 
 .article-container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
   width:70%;
+  border-left: 4px var(--dark-blue) solid;
+}
+
+.article-container img {
+  height: fit-content;
+  width:fit-content;
+  margin: 8px 0 22px 0;
 }
 
 .headings {
@@ -106,7 +116,7 @@ nav a {
 
 .article p {
   padding: 0px 15px 0px 15px;
-  border-left: 4px var(--dark-blue) solid;
+  /* border-left: 4px var(--dark-blue) solid; */
   /* text-align: left; */
   letter-spacing: 1px;
   line-height: 1.8;
