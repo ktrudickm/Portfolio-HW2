@@ -10,37 +10,32 @@
 /* Below we are styling the Header */
 
 header {
+    display: flex;
     background-color: var(--mid-blue);
     color: #ffffff;
-    padding: 2% 0 2% 0;
-    width: 100%;
+    padding: 4% 0 4% 0;
+    flex-wrap: wrap;
 }
 
 header h1 {
-  width: 320px;
   text-align: left;
-  display: inline-block;
   font-size: 35px;
   background-color: var(--dark-blue);
   padding:12px;
-  padding-left:20px;
-  margin-left: 0px;
+  flex-basis: 30%;
 }
 
 nav {
-  display:block;
-  float: right;
-  text-align: center;
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  
 }
 
 nav ul {
   display:flex;
-  align-content:center;
-  justify-content:space-between;
-  min-width: 400px;
-  padding-top: 15px;
-  margin-left: 10px;
+  justify-content: space-around;
+  min-width: 370px;
+  
 }
   
 nav a {
@@ -71,12 +66,6 @@ nav a {
 /* Here we are making the main content (which contains the article "About Me" and the "Work" sections. */
 /* We want to flex them in a direction of column since the sections go from top to bottom. */
 
-main {
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
-  /* border: 1px black dashed; */
-}
 
 /* Here we are styling the "About Me" section. We want it to flex in the row direction since this content goes
   from left to right, starting with the header on the left, and then the image and details on the right. */
@@ -122,7 +111,8 @@ main {
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.8;
-  margin: 5px 5px 5px 0px;
+  /* margin: 5px 5px 5px 0px; */
+  /* flex-basis:70%; */
 }
 
 /* Below we are styling the "Work" section */
@@ -196,28 +186,38 @@ footer ul li a {
 
 
 /* Want the section headers to go to the top with content underneath when page shrinks in column format. */
-@media screen and (min-width: 768px) {
-header {
+@media screen and (max-width: 768px) {
+/* header {
   display:flex;
   flex-direction:row;
   justify-content:space-between;
   flex-wrap: wrap;
   flex: 1 1 auto;
+} */
+header h1{
+  flex:auto;
+  text-align: center;
+}
+nav ul {
+  margin-top:10px;
 }
 
-
+.article {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media screen and (min-width: 992px) {
+.headings {
+width: 100%;
+text-align: center;
+}
 
-  header {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-  }
-
-  header h1 {
-    justify-content: flex-start;
-  }
+.article-container {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 }
