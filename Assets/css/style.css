@@ -6,6 +6,7 @@
 :root {
   --mid-blue:  #6385b1;
   --dark-blue: #1e4270;
+  --transparent-blue: rgba(30,66,112, 0.8);
 }
 /* Below we are styling the Header */
 
@@ -148,12 +149,12 @@ nav a {
   width: 100%;
 }
 
-.project1 img{
+/* .project1 img{
   padding-right:auto;
   width:100%;
   height:100%;
   flex: 0 2 100%;
-}
+} */
 
 .project1 a, .project2 a, .project3 a {
   position:relative;
@@ -177,18 +178,25 @@ nav a {
 }
 
 
-
 .project1, .project2, .project3{
   padding: 10px 10px 10px 10px;
+  opacity:0.8;
 }
+
+.project1:hover, .project2:hover, .project3:hover{
+  opacity:1;
+}
+
  .project2, .project3 {
    width: 50%;
  }
 
- .project2 img, .project3 img {
+ .project1 img, .project2 img, .project3 img {
   width:100%;
   height:100%;
   flex: 0 2 100%;
+  border-style: solid;
+  border-color: var(--dark-blue);
  }
 
 
@@ -238,6 +246,7 @@ footer ul li a {
 header h1{
   flex:auto;
   text-align: center;
+  background-color: transparent;
 }
 
 nav ul {
