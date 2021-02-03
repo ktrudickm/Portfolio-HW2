@@ -1,20 +1,29 @@
 
 * {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Optima', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Creating class :root to be referenced throughout css so that colors do not have to be typed in
+repetedly. */
 :root {
-  --mid-blue:  #6385b1;
-  --dark-blue: #1e4270;
-  --transparent-blue: rgba(30,66,112, 0.8);
+  --darkpurp: #2E1114;
+  --darkplum: #501B1D;
+  --mutedpurp: #64485C;
+  --lightpurp: #83677B;
+  --gray: #ADADAD;
 }
+
 /* Below we are styling the Header */
+
+body {
+  background-color: whitesmoke;
+}
 
 header {
     display: flex;
-    background-color: var(--mid-blue);
-    color: #ffffff;
-    padding: 10px 0 10px 0;
+    background-image: linear-gradient(30deg, var(--lightpurp), var(--darkpurp));
+    color: var(--gray);
+    padding: 40px 0 40px 0;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -22,9 +31,10 @@ header {
 header h1 {
   text-align: center;
   font-size: 35px;
-  background-color: var(--dark-blue);
+  background-color: var(--mutedpurp);
   padding:10px;
   width: 30%;
+  box-shadow:20px 20px 50px var(--darkpurp);
 }
 
 nav {
@@ -40,27 +50,32 @@ nav ul {
 }
   
 nav a {
-    color:whitesmoke;
+    color: var(--gray);
     text-decoration: none;
-    font-weight: bold;
-    border-bottom: 2px white solid;
+    border-bottom: 2px var(--gray) solid;
     padding: 0px 4px 2px 4px;
 } 
+
+nav a:hover {
+  color:var(--lightpurp);
+  border-bottom:none;
+  font-size:105%;
+  font-weight: bold;
+}
 
 .header-image {
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/backgroundimage.jpg");
   background-size: cover;
   background-position: center;
-  /* align-content: center; */
 }
 
 .header-image h2 {
   float:right;
   margin: 150px 50px 10px 0;
-  color: whitesmoke;
+  color: var(--gray);
   font-size: 25px;
 }
 
@@ -81,7 +96,7 @@ nav a {
   flex-direction: column;
   align-items:center;
   width:70%;
-  border-left: 4px var(--dark-blue) solid;
+  border-left: 4px var(--darkplum) solid;
   padding: 0 30px 0 30px;
 }
 
@@ -89,11 +104,11 @@ nav a {
   height: fit-content;
   width:fit-content;
   margin: 8px 0 22px 0;
-  border: 2px var(--mid-blue) solid;
+  border: 6px var(--lightpurp) solid;
 }
 
 .headings {
-  color:var(--dark-blue);
+  color:var(--darkplum);
   text-align: right;
   margin: 2px 2px 2px 2px;
   padding: 0 10px 0 50px;
@@ -102,28 +117,10 @@ nav a {
   width: 30%;
 }
 
-/* Here we are creating a class for the image and about me <p> information and creating their own class so that 
-  when the screen adjusts, these adjust & wrap in relation to each other without affecting the Header "About Me" */
-
-/* .article-container {
-  width:70%;
-} */
-
-/* .article img {
-  max-height: 10%;
-  padding: 10px 20px 10px 20px;
-  border: 1px black dashed;
-  flex: 0 1 auto;
-  flex-basis: 30%;
-}  */
-
 .article p {
   padding: 0px 15px 0px 15px;
-  /* border-left: 4px var(--dark-blue) solid; */
-  /* text-align: left; */
   letter-spacing: 1px;
   line-height: 1.8;
-  /* margin: 5px 5px 5px 0px; */
 }
 
 /* Below we are styling the "Work" section */
@@ -131,7 +128,6 @@ nav a {
 .work {
   display: flex;
   margin-top: 25px;
-  /* justify-content: space-between; */
 }
 
 
@@ -139,22 +135,14 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border-left:  4px var(--dark-blue) solid;
+  border-left:  4px var(--darkplum) solid;
   padding: 0px 30px 10px 30px;
   width:70%;
-  /* justify-content:center; */
 }
 
 .project1 {
   width: 100%;
 }
-
-/* .project1 img{
-  padding-right:auto;
-  width:100%;
-  height:100%;
-  flex: 0 2 100%;
-} */
 
 .project1 a, .project2 a, .project3 a {
   position:relative;
@@ -168,7 +156,7 @@ nav a {
   padding: 8px 30px 0px 10px;
   margin-left:0;
   font-size: 95%;
-  background-color: var(--dark-blue);
+  background-color: var(--darkplum);
   color: whitesmoke;
 }
 
@@ -196,15 +184,15 @@ nav a {
   height:100%;
   flex: 0 2 100%;
   border-style: solid;
-  border-color: var(--dark-blue);
+  border-color: var(--lightpurp);
  }
 
+/* Below we are styling the footer section. This section will follow same basic css styling as the 
+previous two sections. */
 
 footer {
   display: flex;
-  /* flex-direction: row; */
   margin-top: 25px;
-  /* align-items: stretch; */
   margin-bottom: 20px;
 }
 
@@ -214,39 +202,41 @@ footer ul {
   justify-content: space-around;
   width: 70%;
   list-style: none ;
-  border-left:  4px var(--dark-blue) solid;
+  border-left:  4px var(--darkplum) solid;
   padding: 60px 0 60px 0px;
-  /* align-items:center; */
 }
 
 footer ul li {
   width: auto;
-  /* margin-right: 0.5%; */
   padding-left: 0;
   margin-left:0;
 }
 
 footer ul li a {
-  color:var(--dark-blue);
-  text-decoration: underline;
+  color:var(--darkplum);
   font-weight: bold;
   padding: 0px 10px 4px 10px;
 }
 
+footer ul li a:hover {
+  color:var(--lightpurp);
+  border-bottom:none;
+  font-size:105%;
+  font-weight: bold;
+}
 
-/* Want the section headers to go to the top with content underneath when page shrinks in column format. */
+/* Want each section to adjust with different screen resolutions. */
 @media screen and (max-width: 768px) {
-/* header {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-} */
+
+header {
+  padding: 20px 0 20px 0;
+}
+
 header h1{
   flex:auto;
   text-align: center;
   background-color: transparent;
+  border-bottom:none;
 }
 
 nav ul {
@@ -255,12 +245,16 @@ nav ul {
   text-align:center;
 }
 
+/* Want each section to adjust with smaller screens. To do this, we need the content to be a flex and to
+have a flex-direction of wrap so that the content wraps downward with the screen shrinking. */
 
 .article, .work, footer {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Want the headings (About Me, Work, and Contact Me) to move to the top of the section with smaller screens. */
+/* To do this, we make their width 100% so they fit the whole width of the screen. */
 .headings {
 width: 100%;
 text-align: center;
