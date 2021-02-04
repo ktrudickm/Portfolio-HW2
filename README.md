@@ -33,6 +33,16 @@ The following animation shows the web application's appearance and functionality
 
 ![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
 
+## HTML Structuring
 
 
 
+## CSS Structuring
+
+
+
+## Credits
+
+
+
+## Links

@@ -130,7 +130,7 @@ nav a:hover {
   margin-top: 25px;
 }
 
-
+/* Project section containing the project tiles is set to flex so that they  */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -140,6 +140,8 @@ nav a:hover {
   width:70%;
 }
 
+/* Setting project 1 width to 100% so it takes up th first flex row to indicate that it is the most
+significant project. The other projects will flex down to the next row. */
 .project1 {
   width: 100%;
 }
@@ -165,6 +167,7 @@ nav a:hover {
   line-height: 2.4;
 }
 
+/* Setting all of the photos in work section to have an opacity, and then clearing the opacity when hovered over. */
 
 .project1, .project2, .project3{
   padding: 10px 10px 10px 10px;
@@ -175,6 +178,7 @@ nav a:hover {
   opacity:1;
 }
 
+/* Project 1 & 2 are set to a width of 50% in the flex container so they share the row. */
  .project2, .project3 {
    width: 50%;
  }
@@ -216,10 +220,15 @@ footer ul li a {
   color:var(--darkplum);
   font-weight: bold;
   padding: 0px 10px 4px 10px;
+  text-decoration: none;
+  border-bottom: 2px var(--darkplum) solid;
+  padding: 0px 4px 2px 4px;
 }
 
+/* Making the individual contact me list items get larger and remove underline when hovered over. */
+
 footer ul li a:hover {
-  color:var(--lightpurp);
+  color:var(--mutedpurp);
   border-bottom:none;
   font-size:105%;
   font-weight: bold;
