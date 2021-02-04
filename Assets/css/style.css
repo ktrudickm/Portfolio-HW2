@@ -107,6 +107,7 @@ nav a:hover {
   border: 6px var(--lightpurp) solid;
 }
 
+/* Want all the headings to follow the same styling, so created one class for all headings: About Me, Work, and Contact Me */
 .headings {
   color:var(--darkplum);
   text-align: right;
@@ -117,20 +118,23 @@ nav a:hover {
   width: 30%;
 }
 
+
 .article p {
   padding: 0px 15px 0px 15px;
   letter-spacing: 1px;
   line-height: 1.8;
 }
 
-/* Below we are styling the "Work" section */
+/* Below we are styling the "Work" section. Making it a flex property so that the heading and the section to the right of it are
+on the same row. */
 
 .work {
   display: flex;
   margin-top: 25px;
 }
 
-/* Project section containing the project tiles is set to flex so that they  */
+/* Project section containing the project tiles is set to flex so that the individual projects stack side-by-side (with the exception of
+the first project which we want to take up the entire width of the box to indicate it's significance. */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -146,11 +150,14 @@ significant project. The other projects will flex down to the next row. */
   width: 100%;
 }
 
+/* Here we are making sure the titles and subtitles on each project tile are positioned properly by using the position of relative. We
+create this class for the a elements because the a is the parent element that contains the h and p title & subtitles. */
 .project1 a, .project2 a, .project3 a {
   position:relative;
   text-align:center;
 }
 
+/* We are styling the title for each project here with the .project-title class and .subtitle class. */
 .project-title {
   position: absolute;
   bottom:20px;
@@ -179,6 +186,7 @@ significant project. The other projects will flex down to the next row. */
 }
 
 /* Project 1 & 2 are set to a width of 50% in the flex container so they share the row. */
+
  .project2, .project3 {
    width: 50%;
  }
@@ -192,7 +200,7 @@ significant project. The other projects will flex down to the next row. */
  }
 
 /* Below we are styling the footer section. This section will follow same basic css styling as the 
-previous two sections. */
+previous two sections, with a flex property to make sure the section title is on the left and the rest of the contents to the right.*/
 
 footer {
   display: flex;
@@ -200,7 +208,7 @@ footer {
   margin-bottom: 20px;
 }
 
-
+/* The footer unordered list is made to display as flex so that the list items are spaced evenly in a row across the container. */
 footer ul {
   display: flex;
   justify-content: space-around;
@@ -235,6 +243,7 @@ footer ul li a:hover {
 }
 
 /* Want each section to adjust with different screen resolutions. */
+
 @media screen and (max-width: 768px) {
 
 header {
@@ -264,6 +273,7 @@ have a flex-direction of wrap so that the content wraps downward with the screen
 
 /* Want the headings (About Me, Work, and Contact Me) to move to the top of the section with smaller screens. */
 /* To do this, we make their width 100% so they fit the whole width of the screen. */
+
 .headings {
 width: 100%;
 text-align: center;
@@ -300,6 +310,9 @@ padding: 0 0 10px 0;
   font-size: 80%;
 }
 
+/* Below the individual project titles and subtitles are styled so that they shrink in fontsize & container size when the screen
+reached smaller resolutions. */
+
 .project-title {
   padding: 6px 18px 6px 6px;
 }
@@ -309,11 +322,14 @@ padding: 0 0 10px 0;
   font-size: 10%;
 }
 
+/* Making the width of the nav in the header, the projects 2 & 3, and the footer unordered list take up the full width of the screen
+with smaller screen sizes.  */
 
 nav, .project2, .project3, footer ul {
   width: 100%;
 }
 
+/* Here, the list of contact methods turns into a column-list in a smaller screen, and now takes up the whole width of the screen. */
 footer ul {
   display: flex;
   flex-direction: column;
@@ -328,4 +344,5 @@ footer ul {
 footer ul li {
   padding: 5px 0 5px 0;
 }
+
 }

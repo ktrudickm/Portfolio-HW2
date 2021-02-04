@@ -35,7 +35,15 @@ The following animation shows the web application's appearance and functionality
 
 ## HTML Structuring
 
+When creating the HTML structure for my portfolio, I broke it down into indivdual & separate parts. The header contains my name, and then the navigation links that take the user to the respective sections on the page. The fourth link is an external link that when clicked, pulls up a PDF file of my resume. 
 
+After the header, is a simple div element to simply insert a header image below the header, with a subtitle that says "Welcome to my Portfolio" overlayed on top of the background image. A div was used here because this portion has no real meaning or significance, rather it is there to make the page look a little nicer.
+
+We then move into the "main" section of the page indicated by the main element. This is the parent element that contains the two main sections on the portfolio: the About Me section and the Work section. The About Me section is signified by the element of "article" since this section of the "main" contains paragraph style information about me. The div element is used to allow the children of this div element to be grouped under one class of "article-container" (which will be explained in more detail in the CSS Structuring section in this README). Within the div is the image of me, and the p element containing the actual information about me. 
+
+After the article element, the section element is used to contain the work portion of the page. Here, within the section parent element, we have the header for the section ("Work") and then div's for each of the three projects. Each project div contains the reference source, which then contains the title for the project in the h element, the subtitle for the project in the p element, and the image to be used for the display of each project. 
+
+After this section, the main portion of the page is ended and we move into the footer which contains the "Contact Me" information. The footer parent element simply contains the h element, and then the unordered list containing each of the different ways to contact/connect with me. 
 
 ## CSS Structuring
 
