@@ -13,11 +13,11 @@ repetedly. */
   --gray: #e0e0e0;
 }
 
-/* Below we are styling the Header */
-
 body {
   background-color: whitesmoke;
 }
+
+/* Below we are styling the Header */
 
 header {
     display: flex;
@@ -79,12 +79,19 @@ nav a:hover {
   font-size: 25px;
 }
 
-/* Here we are making the main content (which contains the article "About Me" and the "Work" sections. */
-/* We want to flex them in a direction of column since the sections go from top to bottom. */
+/* Want all the headings to follow the same styling, so created one class for all headings: About Me, Work, and Contact Me */
 
+.headings {
+  color:var(--darkplum);
+  text-align: right;
+  margin: 2px 2px 2px 2px;
+  padding: 0 10px 0 50px;
+  font-size: 50px;
+  width: 30%;
+}
 
-/* Here we are styling the "About Me" section. We want it to flex in the row direction since this content goes
-  from left to right, starting with the header on the left, and then the image and details on the right. */
+/* Here we are styling the "About Me" section. We want this to display as a flex so that the content shares the space of the screen, with
+the heading on the elft, and content on the right. */
 
 .article {
   display: flex;
@@ -107,18 +114,6 @@ nav a:hover {
   border: 6px var(--lightpurp) solid;
 }
 
-/* Want all the headings to follow the same styling, so created one class for all headings: About Me, Work, and Contact Me */
-.headings {
-  color:var(--darkplum);
-  text-align: right;
-  margin: 2px 2px 2px 2px;
-  padding: 0 10px 0 50px;
-  font-size: 50px;
-  /* align-items: stretch; */
-  width: 30%;
-}
-
-
 .article p {
   padding: 0px 15px 0px 15px;
   letter-spacing: 1px;
@@ -126,7 +121,7 @@ nav a:hover {
 }
 
 /* Below we are styling the "Work" section. Making it a flex property so that the heading and the section to the right of it are
-on the same row. */
+on the same row (similar to what was done with the article/About Me section */
 
 .work {
   display: flex;
