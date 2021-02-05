@@ -53,7 +53,7 @@ Within each section (About Me, Work, and Contact Me) a class was defined for the
 
 Lastly, a media query was created so that when the screen size changes, the content still looks good and adjusts to the screen size for a pleasant user experience. To do so, we made it so that the headings for each section now took up the whole width of the screen and stacked above the section content. For the work section specifically, we wanted the individual projects to now all be the same size, and to take up the entire width of the screen so that they stacked one on top of the other. This was done by setting the width of the headings to 100%, the article p content width to 100%, and each project (project1, project2, and project3) to a width of 100%.
 
-ENTER SCREENSHOT OF PORTFOLIO ON SMALLER SCREEN
+![responsive site](/Assets/images/Responsive.jpeg)
 
 For the footer, the same thing was done where the Contact Me header width was changed to 100% to stack on top of the contact me methods, and then the contact me links in the unordered list were made to display as flex, but this time flex in the direction of column.
 
