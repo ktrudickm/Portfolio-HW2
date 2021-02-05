@@ -45,22 +45,38 @@ After the article element, the section element is used to contain the work porti
 
 After this section, the main portion of the page is ended and we move into the footer which contains the "Contact Me" information. The footer parent element simply contains the h element, and then the unordered list containing each of the different ways to contact/connect with me. 
 
+See screenshot below for basic HTML structure:
+
+![media-query](./Assets/images/html.png)
+
 ## CSS Structuring
 
 When creating the css, the html was broken down step-by-step, starting with the header, then the article, followed by the work section, and lastly the footer. It was clear that I wanted each section to follow flex properties, so as to achieve the same look as the portfolio demo gif where the individual sections had the headers on the left taking up approximately 30% of the width of the screen, and the content for each section taking up the reamining 70% of the width of the screen. To do this, the parent class for each section needed to display:flex and to have a flex-direction of wrap so that the content would wrap down onto the next row. 
 
 Within each section (About Me, Work, and Contact Me) a class was defined for the content to the left of the borders separating the heading and the section content. These classes were defined as flex so that the content within the parent container would flex in relation to one another. 
 
-Lastly, a media query was created so that when the screen size changes, the content still looks good and adjusts to the screen size for a pleasant user experience. To do so, we made it so that the headings for each section now took up the whole width of the screen and stacked above the section content. For the work section specifically, we wanted the individual projects to now all be the same size, and to take up the entire width of the screen so that they stacked one on top of the other. This was done by setting the width of the headings to 100%, the article p content width to 100%, and each project (project1, project2, and project3) to a width of 100%.
+Lastly, a media query was created so that when the screen size changes, the content still looks good and adjusts to the screen size for a pleasant user experience. To do so, we made it so that the headings for each section now took up the whole width of the screen and stacked above the section content. For the work section specifically, we wanted the individual projects to now all be the same size, and to take up the entire width of the screen so that they stacked one on top of the other. This was done by setting the width of the headings to 100%, the article p content width to 100%, and each project (project1, project2, and project3) to a width of 100%. Below you will see the a screenshot of the media query portion in the style.css, and then the actual effect it has on the site turnout.
+
+**CSS Media Query**
+
+![media-query](./Assets/images/media.png)
+
+**Outcome of Media Query**
 
 ![responsive-site](./Assets/images/Responsive.png)
 
 For the footer, the same thing was done where the Contact Me header width was changed to 100% to stack on top of the contact me methods, and then the contact me links in the unordered list were made to display as flex, but this time flex in the direction of column.
 
-ENTER SCREENSHOT OF CONTACT ME SECTION ON SMALLER SCREEN
+![contact-me](./Assets/images/contact-me.png)
 ## Credits
 
+CSS-Tricks - [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/ "Flex-box guide")
 
+W3Schools - [Responsive Web Designs](https://www.w3schools.com/css/css_rwd_mediaqueries.asp "Media Queries")
+
+W3Schools - [CSS Flex Container](https://www.w3schools.com/css/css3_flexbox_container.asp "Flex Containers")
+
+Visme - [Website Color Schemes](https://visme.co/blog/website-color-schemes/ "Color Schemes")
 
 ## Links
 
