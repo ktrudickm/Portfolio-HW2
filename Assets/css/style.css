@@ -108,8 +108,6 @@ the heading on the elft, and content on the right. */
 }
 
 .article-container img {
-  height: fit-content;
-  width:fit-content;
   margin: 8px 0 22px 0;
   border: 6px var(--lightpurp) solid;
 }
