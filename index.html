@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/css/reset.css" />
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+
     <title>My Portfolio</title>
 </head>
 
@@ -15,11 +18,11 @@
     <!-- Here we put together the header, which contains my name, and the navigation links -->
 
     <header>
-        <h1>Kendall Trudick</h1>
+        <h1>KENDALL TRUDICK</h1>
         <nav>
             <ul>
                 <li><a href="#about-me">about me</a></li>
-                <li><a href="#work">work</a></li>
+                <li><a href="#work">projects</a></li>
                 <li><a href="#contact">contact me</a></li>
                 <li><a href="./Assets/CS-Trudick-Resume.pdf" target="_blank">resume</a></li>
             </ul>        
@@ -43,7 +46,7 @@
                 <p>Hello, my name is Kendall Trudick and I am a 25 year old from Cleveland, OH currently living in Columbus, OH. I graduated from The Ohio State University in 2019 with a degree in chemical
                      engineering. Since then, I worked at Anheuser-Busch for a year and a half, and now more recently I am working as a Data Analyst at Vertiv. </p></br>
                 <p>After realizing I wanted to make a change in my career path and take on a new challenge, I enrolled in the Full Stack Web Development Bootcamp at Ohio State. Through this program I 
-                    have so far been exposed to HTML, CSS, JavaScript, jQuery, API usage, and Node.js. I have utilized these new skills to complete numerous projects and homeworks that have helped to further my knowledge
+                    have so far been exposed to HTML, CSS, JavaScript, jQuery, API usage, Node.js, mySQL, Handlebars, and Express.js. I have utilized these new skills to complete numerous projects and homeworks that have helped to further my knowledge
                      and understanding of Web Development.</p></br>
                 <p>I am excited for this new journey and I look forward to the doors it will open for me. Below you will get some insight into the work I have been doing to hone in on and utilize my newfound skills and knowledge.</p></br>
         </article>
@@ -52,31 +55,51 @@
         <!-- Included here are the different pieces of work/projects to be showcased -->
 
         <section id="work" class="work">
-            <h4 class="headings">work</h4>
+            <h4 class="headings">projects</h4>
             <div class="projects">
                 <div class="project1">
-                    <a href="https://rrogers422.github.io/MovieDataBase/" target="_blank">
+                    <a href="https://ktrudickm.github.io/MoviePlaylist/" target="_blank">
+                        <img src="./Assets/images/movieproject.png" alt="Movie Project" width="500" height="400">
+                    </a>
+                    <div class='info'>
                         <h5 class="project-title">Bust A Movie</br>
                             <p class="subtitle">API's, Javascript, Bootstrap</p>
+                            <a class='link' href="https://github.com/rrogers422/MovieDataBase" target='_blank'>GitHub Repository</a>
                         </h5>
-                        <img src="./Assets/images/movieproject.png" alt="Horiseon Project" width="500" height="400">
+                    </div>
+                </div>
+                <div class="project1">
+                    <a href="https://the-field-app.herokuapp.com/" target="_blank">
+                        <img src="./Assets/images/theField.png" alt="Field Project" width="500" height="400">
                     </a>
+                    <div class='info'>
+                        <h5 class="project-title">The Field</br>
+                            <p class="subtitle">JS, Handlebars, Express, MVC</p>
+                            <a class='link' href="https://github.com/ktrudickm/The_Field/" target='_blank'>GitHub Repository</a>
+                        </h5>
+                    </div>
                 </div>
                 <div class="project2">
                     <a href="https://ktrudickm.github.io/Weather-Dashboard/" target="_blank">
-                        <h5 class="project-title">Weather Dashboard</br>
-                            <p class="subtitle">Server Side API's</p>
-                        </h5>
                         <img src="Assets/images/weatherDash.png" alt="Weather Dashboard" width="400" height="350">
                     </a>
+                    <div>
+                        <h5 class="project-title">Weather Dashboard</br>
+                            <p class="subtitle">Server Side API's</p>
+                            <a class='link' href="https://github.com/ktrudickm/Weather-Dashboard/" target='_blank'>GitHub Repository</a>
+                        </h5>
+                    </div>
                 </div>
                 <div class="project3">
                     <a href="https://ktrudickm.github.io/Work-Scheduler/" target="_blank">
-                        <h5 class="project-title">Work-Day Scheduler</br>
-                            <p class="subtitle">Third Party API's</p>
-                        </h5>
                         <img src="Assets/images/workSched.png" alt="Work Scheduler" width="400" height="350">
                     </a>
+                    <div>
+                        <h5 class="project-title">Work-Day Scheduler</br>
+                            <p class="subtitle">Third Party API's</p>
+                            <a class='link' href="https://github.com/ktrudickm/Work-Scheduler/" target='_blank'>GitHub Repository</a>
+                        </h5>
+                    </div>
                 </div>
              </div>  
             
@@ -92,16 +115,16 @@
         <h6 class="headings" id="contact">contact me</h6>
         <ul>
             <li>
-                <a href="#">330.998.4295</a>
+                <a href="#"><i class="fas fa-mobile-alt"></i>    330.998.4295</a>
             </li>
             <li>
-                <a href="mailto: ktrudickm@gmail.com">ktrudickm@gmail.com</a>
+                <a href="mailto: ktrudickm@gmail.com"><i class="far fa-paper-plane"></i>    ktrudickm@gmail.com</a>
             </li>
             <li>
-                <a href="https://github.com/ktrudickm" target="_blank">GitHub</a>
+                <a href="https://github.com/ktrudickm" target="_blank"><i class="fab fa-github"></i>  GitHub</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/kendall-trudick-21598a106/" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/kendall-trudick-21598a106/" target="_blank"><i class="fab fa-linkedin"></i>      LinkedIn</a>
             </li>
         </ul>
     </footer><br/>
